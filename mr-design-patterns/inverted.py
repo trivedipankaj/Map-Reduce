@@ -1,5 +1,5 @@
 from mrjob.job import MRJob
-class FindMax(MRJob):
+class FindInverted(MRJob):
 
     def mapper(self, _, line):
 	for word in line.split('\n'):
@@ -20,4 +20,4 @@ class FindMax(MRJob):
 
 
 if __name__ == '__main__':
-    FindMax.run()
+    FindInverted.run()
